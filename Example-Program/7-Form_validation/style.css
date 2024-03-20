@@ -1,0 +1,9 @@
+.images-1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+.card .card-body {
+    background-color: azure;
+}

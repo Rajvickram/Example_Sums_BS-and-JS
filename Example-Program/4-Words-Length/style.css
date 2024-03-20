@@ -1,0 +1,12 @@
+.images-1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+
+label {
+    color: chocolate;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}

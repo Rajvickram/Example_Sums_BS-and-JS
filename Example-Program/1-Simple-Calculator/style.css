@@ -1,0 +1,35 @@
+
+
+.images_1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+
+nav {
+    height: 5rem;
+}
+
+.card-title:hover {
+    color: bisque;
+}
+
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+
+.label {
+    font-size: 1.2rem;
+    color: coral;
+    text-decoration: underline;
+}
+
+
+input:hover {
+    background-color: cadetblue;
+    color: #fff;
+    padding: 1.2rem 1.2rem;
+}

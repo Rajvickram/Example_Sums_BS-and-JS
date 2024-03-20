@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using BS and JS</title>
+    <link rel="stylesheet" href="/Example-Program/7-Form_validation/style.css">
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body style="background-color: bisque;">
+    
+
+    <header>
+        <nav class="navbar navbar-dark bg-success navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="https://www.solodev.com/core/fileparse.php/131/urlt/validate-bootstrap-forms.jpg" alt="Images_1" class="images-1">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="mynavbtn">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/Example-Program/1-Simple-Calculator/index.html" class="nav-link">Normal_calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/2-Centimeter-Inches/index.html" class="nav-link">Ce-Le</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/3-Random-Letter/index.html" class="nav-link">Random_Letters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/4-Words-Length/index.html" class="nav-link">Words-Length</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/5-Fd-Rate-Calculator/index.html" class="nav-link">FD-Rate-Calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/6-Counter-Program/index.html" class="nav-link">Counter-Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/7-Form_validation/index.html" class="nav-link active">Form-Validation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Carousel_slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Bill-Amount-calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">City-Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post">
+                            <label for="name">Full Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-file-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <label for="mobile">Mobile No.</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                                        <input type="text" class="form-control" placeholder="+91 7010986623" required> 
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="email">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" placeholder="you@gmail.com" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <label for="pwd">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-key"></i></span>
+                                        <input type="password" class="form-control" placeholder="Password" required> 
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="cnfrmpwd">Confirm Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-center mt-4">
+                                <input type="checkbox" class="form-check-input me-2" required>
+                                <label for="Agree" class="form-check-label">I agree to <a href="" data-bs-toggle="modal" data-bs-target="#show">term and Conditions</a></label>
+                            </div>
+
+                            <div class="d-flex justify-content-center gap-2 mt-4">
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                                <button type="button" class="btn btn-success"><i class="bi bi-box-arrow-up-right me-2"></i> Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="show" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Terms and condition</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Form validation is one of the most critical factors when it comes to collecting information and preventing web form misuse.
+
+                        Apart from saving you from possible cyber-attacks, form validation also protects your website from poor form entries. During form submission with validation, the user will be given the option to modify data fields that contain invalid data before submitting.
+                        
+                        In general, you need form validation as a security measure since invalidated form data is one of the main sources of website security vulnerabilities.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Example-Program/7-Form_validation/script.js"></script>
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+</body>
+</html>

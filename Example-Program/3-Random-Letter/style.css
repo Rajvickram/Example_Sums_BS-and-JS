@@ -1,0 +1,15 @@
+.images-1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+label {
+    color: cadetblue;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+h2:hover {
+    color: bisque;
+}

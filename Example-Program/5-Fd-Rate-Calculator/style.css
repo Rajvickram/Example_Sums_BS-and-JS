@@ -1,0 +1,11 @@
+.images-1 {
+    width: 5rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+label {
+    color: cornflowerblue;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}

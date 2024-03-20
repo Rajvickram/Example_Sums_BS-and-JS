@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Rate Calculator using BS and JS</title>
+    <link rel="stylesheet" href="/Example-Program/5-Fd-Rate-Calculator/style.css">
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-dark bg-secondary navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="https://play-lh.googleusercontent.com/DkgXc0sOHPHDKby3JmQ_wy-uaPRTPisutwbM8KgtcUcRDZANNLTREf4uo3G6gboJEOg=w600-h300-pc0xffffff-pd" alt="Images-1" class="images-1">
+                </a>
+
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="mynavbtn">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/Example-Program/1-Simple-Calculator/index.html" class="nav-link">Normal_calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/2-Centimeter-Inches/index.html" class="nav-link">Ce-Le</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/3-Random-Letter/index.html" class="nav-link">Random_Letters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/4-Words-Length/index.html" class="nav-link">Words-Length</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/5-Fd-Rate-Calculator/index.html" class="nav-link">FD-Rate-Calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/6-Counter-Program/index.html" class="nav-link active">Counter-Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Example-Program/7-Form_validation/index.html" class="nav-link">Form-Validation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Carousel_slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Bill-Amount-calc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">City-Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="data:image/jpeg;base64,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" alt="images-1" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">FD Rate Calculator using BS and JS</h2>
+                        <span class="badge bg-primary mb-2">Formula : </span>
+                        <span class="badge bg-success mb-2 ms-2">IF or ELSE or LADDER ELSE IF</span>
+                        <p class="card-text">An FD calculator can be used to determine the interest and the amount that it will accrue at the time of maturity. It is a simple-to-use tool available on the Groww website.</p>
+
+
+                        <form method="post">
+                            <label for="name" class="mb-2">Enter Your Ratio Value :</label>
+                            <input type="text" class="form-control mb-2" placeholder="Values.........">
+
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-primary" onclick="show()">Click Me....</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-muted blockquote-footer float-end mt-1">Lastly Updated on (19-03-2024)</span>
+
+                        <form method="post">
+                            <label for="name" class="mt-2">Output :</label>
+                            <input type="text" class="form-control" placeholder="Answer will be here........." id="output">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Example-Program/5-Fd-Rate-Calculator/script.js"></script>
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+</body>
+</html>
