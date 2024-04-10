@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Words Length using BS and JS</title>
-    <link rel="stylesheet" href="/Example-Program/4-Words-Length/style.css">
+    <title>Select a City using BS and JS</title>
+    <link rel="stylesheet" href="/Example-Program/9-City-Stats-Program/style.css">
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
 </head>
 <body>
@@ -14,14 +14,12 @@
         <nav class="navbar navbar-dark bg-warning navbar-expand-lg">
             <div class="container">
                 <a href="#" class="navbar-brand">
-                    <img src="https://wordcounter.net/images/word-counter.jpg" alt="images-1" class="images-1">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4M-TTt0UUSAt0ow75GVBMlrpWnGzRd3r5c0rzVOKfTQ9FRDHrDzIe_ThrCWan98pgdInWuR-LPTTq4y_moAFIN7cnQKTCkbj67J_8U99S37GwCbvtAjy0hqE2cRTtv4zfHPQzs3DPsh-i_G3zTkoGG5SsBxgnhSt1_4LaU-elv63fVXB4TR_uMmEtasgG/s2240/Select%20Country%20State%20and%20City.png" alt="Images_1" class="images-1">
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbtn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-
 
                 <div class="collapse navbar-collapse" id="mynavbtn">
                     <ul class="navbar-nav ms-auto">
@@ -41,7 +39,7 @@
                             <a href="/Example-Program/5-Fd-Rate-Calculator/index.html" class="nav-link">FD-Rate-Calc</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Example-Program/6-Counter-Program/index.html" class="nav-link active">Counter-Program</a>
+                            <a href="/Example-Program/6-Counter-Program/index.html" class="nav-link">Counter-Program</a>
                         </li>
                         <li class="nav-item">
                             <a href="/Example-Program/7-Form_validation/index.html" class="nav-link">Form-Validation</a>
@@ -50,10 +48,10 @@
                             <a href="/Example-Program/8-Carousel-Slider/index.html" class="nav-link">Carousel_slider</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Bill-Amount-calc</a>
+                            <a href="/Example-Program/9-City-Stats-Program/index.html" class="nav-link active" style="color: aqua;">City-Stats</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">City-Stats</a>
+                            <a href="#" class="nav-link">Bill-Amount-calc</a>
                         </li>
                     </ul>
                 </div>
@@ -63,37 +61,39 @@
 
 
 
-
     <div class="container">
         <div class="row">
-            <div class="col-5 mx-auto">
+            <div class="col-5">
                 <div class="card">
                     <div class="card-header">
-                        <img src="https://i.ytimg.com/vi/l9xMj6DuWR8/sddefault.jpg" alt="images-1" class="img-fluid">
+                        <img src="https://i.stack.imgur.com/lLjxa.png" alt="Images_2" class="img-fluid">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">Total Words Length</h2>
+                        <h3 class="card-title">Select a City</h3>
                         <span class="badge bg-primary mb-2">Formula :</span>
-                        <span class="badge bg-success mb-2">Length </span>
-                        <p class="card-text">You can use a free word counter tool online to count the number of words in an image. To do this, you can upload the image to the tool, and it will extract the text from the image and count the number of words.</p>
+                        <span class="badge bg-success mb-2 ms-2">SWITCH_CASE</span>
+                        <p class="card-text">To display the city name on the page after the user submits the form, you can use JavaScript DOM manipulation to access the form input field and display the value entered by the user.</p>
 
-                        <form method="post">
-                            <label for="name" class="mb-2">Enter Your Words :</label>
-                            <br>
-                            <textarea name="words" id="input" cols="30" rows="10" class="form-control mb-2"></textarea>
 
-                            <div class="d-grid">
-                                <button type="button" class="btn btn-primary" onclick="press()">Convert</button>
+                        <div id="wrapper">
+                            <div class="input">
+                                <select id="input-range" class="form-control">
+                                    <option value="Chidamabaram">Chidambaram</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Delhi">Delhi</option>
+                                </select>
                             </div>
-                        </form>
+
+                            <div class="mt-2 d-grid">
+                                <button type="button" class="btn btn-primary">Show Stats</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer">
-                        <span class="text-muted blockquote-footer float-end mt-1">Lastly Updated on (19-03-2024)</span>
-
-                        <form method="post">
-                            <label for="Output" class="mt-1">Output :</label>
-                            <input type="text" class="form-control" placeholder="Answer will be here......" id="result">
-                        </form>
+                        <span class="text-muted">Lastly Updated on (25-03-2024)</span>
+                    
                     </div>
                 </div>
             </div>
@@ -108,7 +108,14 @@
 
 
 
-    <script src="/Example-Program/4-Words-Length/script.js"></script>
+
+
+
+
+
+
+
+    <script src="/Example-Program/9-City-Stats-Program/script.js"></script>
     <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
 </body>
 </html>

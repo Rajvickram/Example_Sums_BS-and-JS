@@ -13,5 +13,5 @@ function Btn_1() {
 
     avg = tot * 12 / 100 - 3
 
-    document.getElementById("result_1").value = `${avg} values`
+    document.getElementById("result_1").value = `${avg.toFixed(2)} values`
 }
