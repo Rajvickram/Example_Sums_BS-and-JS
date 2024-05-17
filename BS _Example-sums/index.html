@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Sums in Bootstrap</title>
+    <title>Example Sum in Bootstrap</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -12,25 +13,28 @@
     <header>
         <nav class="navbar navbar-dark bg-primary navbar-expand-md">
             <div class="container">
-                <a href="@" class="navbar-brand fs-2">
+                <a href="#" class="navbar-brand">
                     Bootstrap Tamil
                 </a>
 
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#btn">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBtn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="btn">
+                <div class="collapse navbar-collapse" id="NavBtn">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active" style="color: aqua;">Home</a>
+                            <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" style="color: aqua;">About</a>
+                            <a href="#" class="nav-link">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" style="color: aqua;">Contact</a>
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -38,65 +42,96 @@
         </nav>
     </header>
 
-
-   <div class="container mt-5">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <form method="post">
-                        <label for="name">Enter Your Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter ur name">
-
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <label for="Email">Enter your Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="You@gmail.com">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post">
+                            <label for="name">Enter Your Full Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Your Name" id="name" required>
                             </div>
 
-                            <div class="col-6">
-                                <label for="PWD">Confirm Your Email</label>
-                                <input type="email" class="form-control" id="PWD" placeholder="Eamil">
+                            <div class="form-group mt-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="email">Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" class="form-control" placeholder="You@gmail.com" id="email" required>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-6">
+                                        <label for="ConfirmEmail">Confirm Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-envelope-arrow-up-fill"></i></span>
+                                            <input type="email" class="form-control" placeholder="Confirm Your Email Address" id="ConfirmEmail" required>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <label for="PWD">Password</label>
-                                <input type="password" class="form-control" id="CPWD" placeholder="Password">
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="Password">Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-key"></i></span>
+                                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="CnfrmPwd">Confirm Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                                            <input type="password" class="form-control" id="CnfrmPwd" placeholder="Confirm Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="form-group d-flex justify-content-center mt-2">
+                                <div class="form-check">
+                                    <div class="form-check-input">
+                                    </div>
+                                    <div class="form-check-label">
+                                        I Agree to Term and Conditions
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-6">
-                                <label for="CPWD">Confirm Your Password</label>
-                                <input type="password" class="form-control" id="CPWD" placeholder="Password">
+
+                            <!-- PopOver Button -->
+
+                            <div class="row text-center mt-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-warning" title="Welcome to Our Popover button" data-bs-content="This is Pop Over Button You Can first Check the Use of an Pop Over Button because the value and use of an Button and it can be having the main concept of an Poping up in the so much of an Direction will be haven't cleared to get from it......." id="welcome" data-bs-trigger="focus">Press the PopPup</button>
+                                </div>
                             </div>
-                        </div>
-                        
 
-                        <div class="d-flex justify-content-center mt-3">
-                            <input type="checkbox" class="me-2">
-                            <label for="name">I Agree to Term and Condition</label>
-                        </div>
-
-                        <div class="d-flex justify-content-center mt-3">
-                            <button type="reset" class="btn btn-secondary me-3">Reset</button>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </div>
-                    </form>
+                            <div class="form-group d-flex justify-content-center mt-3">
+                                <button type="reset" class="btn btn-secondary me-2">Reset</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-   </div>
-
-   <div class="container mt-5 d-flex justify-content-center">
-    <button type="button" id="welcome" class="btn btn-warning" title="Welcome to Our Page" data-bs-content="Evidence-based media reporting on sexual harassment can change the attitudes and behaviours that drive violence against women." data-bs-trigger="focus">Welcome 
-    </button>
-   </div>
-
-  
-
-   
 
 
 
@@ -106,12 +141,17 @@
 
 
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-   <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
-   <script>
-    let trig = document.getElementById('welcome')
 
-    let pop = new bootstrap.Popover(trig)
-   </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+    <script>
+        let trigger = document.getElementById('welcome')
+
+        let pop = new bootstrap.Popover(trigger)
+    </script>
 </body>
 </html>
