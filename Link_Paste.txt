@@ -1,4 +1,28 @@
 1. Bootstrap Icon Link :
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. JAVASCRIPT CODE FOR FORM VALIDATION :
+-----------------------------------------------------
+<!-- <script>
+        (function () {
+            window.addEventListener('load', function() {
+                let forms = document.getElementsByTagName('form');
+
+                let validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if(form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false)
+                })
+            })
+        })();
+
+    </script> -->
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
