@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page In Sign Up Page using BS and JS</title>
+    <link rel="stylesheet" href="/Form_Validation_Page/SignUp_Page/style.css">
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    
+
+    <header>
+        <nav class="navbar navbar-dark bg-info navbar-expand-md">
+            <div class="container">
+                <a href="#" class="navbar-brand"><i class="bi bi-bootstrap me-2"></i>BS-Sign-UP_Page</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="NavBtn">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">InFo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center h3_Tag">Sign Up</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" novalidate>
+                            <div class="form-group">
+                                <label for="Frstname" class="Frstname">First Name :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-person i-tag"></i></div>
+                                    <input type="text" class="form-control" placeholder="Enter Your First Name" id="Frstname" required>
+                                    <div class="valid-feedback">Nice Name</div>
+                                    <div class="invalid-feedback">Enter Name Here...</div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <label for="LstName" class="LstName">Last Name :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                    <input type="text" class="form-control" id="LstName" placeholder="Enter Last Name" required>
+                                    <div class="valid-feedback">Nice Last Name Buddy</div>
+                                    <div class="invalid-feedback">Enter Name Again.....</div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <label for="Email" class="Email">Email :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                                    <input type="email" class="form-control" placeholder="You@gmail.com" id="Email" required>
+                                    <div class="valid-feedback">Good Email Man</div>
+                                    <div class="invalid-feedback">Enter Email Again Here....</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="CnfrmEmail" class="CnfrmEmail">Confirm Email Address :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="Confirm Email Address" id="CnfrmEmail" required>
+                                    <div class="valid-feedback">Nice Man</div>
+                                    <div class="invalid-feedback">No Clear Email Text Again....</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="PWD" class="PWD">Password :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-key"></i></div>
+                                    <input type="password" class="form-control" placeholder="Password" id="PWD" required>
+                                    <div class="valid-feedback">Nice password Man</div>
+                                    <div class="invalid-feedback">Try Again... Not Nice</div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <label for="cnfrmPWD" class="cnfrmPWD">Confirm Password :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
+                                    <input type="password" class="form-control" placeholder="Confirm Password" id="cnfrmPWD" required>
+                                    <div class="valid-feedback">Supeb Man!...</div>
+                                    <div class="invalid-feedback">Not Nice Man Try Again....</div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group d-flex justify-content-center mt-3">
+                                <button type="reset" class="btn btn-warning me-2 re-btn">RESET</button>
+                                <button type="submit" class="btn btn-success su-btn"><i class="bi bi-unlock me-2 "></i>SIGN UP</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+
+    <script>
+        (function () {
+            window.addEventListener('load', function() {
+                let forms = document.getElementsByTagName('form')
+
+                let validate = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false)
+                })
+            })
+        })();
+    </script>
+</body>
+</html>

@@ -3,18 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Program in Bootstrap of Form Validation</title>
+    <title>Example Page For Log In using Bootstrap and JavaScript</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Form_Validation_Page/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <style>
-        .active:hover {
-            background-color: cornflowerblue;
-        }
-
-        .card-stle:hover {
-            color: cadetblue;
-        }
-    </style>
 </head>
 <body>
     
@@ -25,25 +17,26 @@
                 <a href="#" class="navbar-brand">
                     <i class="bi bi-bootstrap me-2"></i>Bootstrap Tamil
                 </a>
-                
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBtn">
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MyNavBtn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="NavBtn">
-                    <ul class="navbar-nav ms-auto">
+
+                <div class="collapse navbar-collapse" id="MyNavBtn">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a href="#" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About us</a>
+                            <a href="#" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Sign up</a>
+                            <a href="#" class="nav-link">Info</a>
                         </li>
                     </ul>
                 </div>
@@ -51,44 +44,47 @@
         </nav>
     </header>
 
+
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-header card-stle bg-transparent">Form Validation</h2>
+                        <h3 class="text-center bg-transparent h3-tag">Sign In</h3>
                     </div>
                     <div class="card-body">
                         <form method="post" novalidate>
                             <div class="form-group">
-                                <label for="email">Email :</label>
+                                <label for="email">Email Address</label>
                                 <div class="input-group">
                                     <div class="input-group-text"><i class="bi bi-envelope"></i></div>
-                                    <input type="email" class="form-control" placeholder="You@gmail.com" id="email" required>
+                                    <input type="email" class="form-control" placeholder="You@gmail.comm" id="email" required>
                                     <div class="valid-feedback">Looks Good</div>
-                                    <div class="invalid-feedback">Enter your Email</div>
+                                    <div class="invalid-feedback">Enter Email</div>
                                 </div>
                             </div>
 
-                            <div class="form-group mt-2">
-                                <label for="Password">Password</label>
+
+                            <div class="form-group">
+                                <label for="PWD">Password</label>
                                 <div class="input-group">
                                     <div class="input-group-text"><i class="bi bi-key"></i></div>
-                                    <input type="password" class="form-control" placeholder="Password" id="Password" required>
-                                    <div class="valid-feedback">Looks Good</div>
-                                    <div class="invalid-feedback">Enter your Password</div>
+                                    <input type="password" class="form-control" placeholder="Password" id="PWD" required>
+                                    <div class="valid-feedback">Looks Nice Dude</div>
+                                    <div class="invalid-feedback">Enter Password</div>
                                 </div>
                             </div>
-                            
 
-                            <div class="d-grid mt-3">
-                                <button type="submit" class="btn btn-success btn-style"><i class="bi bi-lock"></i>Login</button>
+                            <div class="form-group d-flex justify-content-center mt-3">
+                                <button type="reset" class="btn btn-secondary me-2 btn_tag">Reset</button>
+                                <button type="submit" class="btn btn-success"><i class="bi bi-lock me-2"></i>Log In</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="text-center mt-2">
-                    <p>Don't have an account Please! <a href="#">Register Here</a></p>
+                <div class="card_Ca d-flex justify-content-center mt-2">
+                    <p>Don'T have an Account <a href="/Form_Validation_Page/SignUp_Page/index.html" target="_blank" class="ms-1">Click Here!</a></p>
                 </div>
             </div>
         </div>
@@ -105,27 +101,27 @@
 
 
 
+
+
+
+
     <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
-    
     <script>
         (function () {
-            'use strict';
-
             window.addEventListener('load', function() {
-                let forms = document.getElementsByTagName('form');
+                let forms = document.getElementsByTagName('form')
 
-                let validation = Array.prototype.filter.call(forms, function(form) {
+                let validate = Array.prototype.filter.call(forms, function(form) {
                     form.addEventListener('submit', function(event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
                         }
-                        form.classList.add('was-validated');
+                        form.classList.add('was-validated')
                     }, false)
                 })
             })
         })();
     </script>
-    
 </body>
 </html>

@@ -1,0 +1,113 @@
+.h3_Tag {
+    color: cadetblue;
+}
+
+.Frstname {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Frstname:hover {
+    color: lightblue;
+}
+
+
+.LstName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.LstName:hover {
+    color: lightblue;
+}
+
+
+.Email {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Email:hover {
+    color: lightblue;
+}
+
+.CnfrmEmail {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.CnfrmEmail:hover {
+    color: lightblue;
+}
+
+.PWD {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.PWD:hover {
+    color: lightblue;
+}
+
+
+.cnfrmPWD {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cnfrmPWD:hover {
+    color: lightblue;
+}
+
+
+#Frstname:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+#LstName:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+#Email:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+
+#CnfrmEmail:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+
+#PWD:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+
+#cnfrmPWD:hover {
+    padding: 1rem;
+    color: lightpink;
+}
+
+
+.re-btn:hover {
+    background: linear-gradient(to right, lightblue, lightpink);
+    box-shadow: 10px 10px 5px lightseagreen;
+}
+
+
+.su-btn:hover {
+    background: linear-gradient(to left, lightpink, lightblue, lightskyblue)
+}
+
